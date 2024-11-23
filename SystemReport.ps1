@@ -13,7 +13,7 @@ Write-Host "
  |W|N|Z|C|o|n|s|u|l|t|i|n|g|
  +-+-+-+-+-+-+-+-+-+-+-+-+-+
  System information collection script.
- version 1.1
+ version 2.0
 "
 
 
