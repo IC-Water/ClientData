@@ -155,6 +155,15 @@ winget list | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -
 
 Start-Sleep -Seconds 20
 
+# Get all Windows Enabled Featured.
+"List of all Windows Enabled Featured" | out-file -filepath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+Get-WindowsOptionalFeature -Online | where {$_.State -eq "Enabled"} | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+
+Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+
+Start-Sleep -Seconds 20
 # List of startup apps
 "Startup APPS" | out-file -filepath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 Get-CimInstance -ClassName Win32_StartupCommand | Select-Object -Property Description, User | out-file -filepath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
