@@ -103,6 +103,20 @@ get-smbshare | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append 
 
 Start-Sleep -Seconds 10
 
+Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+
+# Get list of all Open Ports
+"List of all Open Ports" | out-file -filepath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+netstat -a | out-file -filepath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+
+Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+
+Start-Sleep -Seconds 20
+
 #Get all SSID and passwords
 
 
