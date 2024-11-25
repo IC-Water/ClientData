@@ -109,7 +109,7 @@ Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -App
 
 # Get list of all Open Ports
 "List of all Open Ports" | out-file -filepath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
-netstat -a | out-file -filepath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+netstat -at | out-file -filepath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 
 Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
