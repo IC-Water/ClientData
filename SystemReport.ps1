@@ -110,9 +110,17 @@ Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -App
  Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
   Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 
+
+
+#
+#
+# Changed this to GetTCPConnections resolving domains.
 # Get list of all Open Ports
 "List of all Open Ports" | out-file -filepath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
-netstat -at | out-file -filepath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+# netstat -at | out-file -filepath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+
+#Updated from the NetStat above.
+Get-NetTCPConnection -State Established |Select-Object -Property LocalAddress, LocalPort,@{name='RemoteHostName';expression={(Resolve-DnsName $_.RemoteAddress).NameHost}},RemoteAddress, RemotePort, State,@{name='ProcessName';expression={(Get-Process -Id $_.OwningProcess). Path}},OffloadState,CreationTime |ft
 
 Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
  Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
