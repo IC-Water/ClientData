@@ -2,7 +2,7 @@ $WNZClientInfo = "${Env:ComputerName}"
 $folderPathMain = "C:\WNZClientFiles"
 $folderPathScripts = "C:\WNZClientFiles\Scripts"
 $folderPathReports = "C:\WNZClientFiles\Reports"
-
+$WNZUserName = "${Env:Username}"
 
 
 Clear
@@ -17,12 +17,12 @@ Write-Host "
 "
 
 
-Write-Host "This script takes about 5 minutes to complete."
+Write-Host "Hello $WNZUserName, This script takes about 5 minutes to complete."
 
 # Get host name and last boot time 
 systeminfo | Select-String "Host Name","System Boot Time" | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 
-Start-Sleep -Seconds 5
+
 
  
 Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
@@ -38,12 +38,12 @@ Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -App
 ipconfig /all  | find /i '"DHCP Server"' | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
  
  Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
- Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
- Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+  Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+   Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
  
  
  
- Start-Sleep -Seconds 5
+
 
 
 Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
@@ -60,9 +60,11 @@ systeminfo | findstr /i '"OS"' | find '"OS Configuration"' | out-file -FilePath 
 
 
 
+ Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+  Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+   Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 
 
-Start-sleep -seconds 10
 
 # Get Anti-Virus software
 "Installed Anti-Virus software" | out-file -filepath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
@@ -70,52 +72,53 @@ Get-CimInstance -Namespace root/SecurityCenter2 -ClassName AntivirusProduct | ou
 
 
 
-Start-Sleep -seconds 10
+
 
 # Get all local users
 "List of local users" | out-file -filepath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 Get-LocalGroupMember -name users | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 
 
-Start-Sleep -seconds 10
+
 
 # Get members of administrator group
 "List of users in the Administrator Group" | out-file -filepath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 net localgroup administrators | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 
 
-Start-Sleep -seconds 10
+
 # List all drives
 "List of connected drives and mapped drives" | out-file -filepath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 gdr -PSProvider 'FileSystem' | out-file -filepath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 
 
-Start-Sleep -Seconds 10
+
 # See if Shadow Copy is enabled
 "Shadow Copy Status" | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 vssadmin list shadows | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 
-Start-Sleep -Seconds 10
+ Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+  Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 
 # Get list of all shared folders
 "List of all shared folders" | out-file -filepath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 get-smbshare | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 
-Start-Sleep -Seconds 10
+
 
 Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
-Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
-Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+ Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+  Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 
 # Get list of all Open Ports
 "List of all Open Ports" | out-file -filepath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 netstat -at | out-file -filepath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 
 Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
-Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
-Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+ Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+  Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 
-Start-Sleep -Seconds 20
+
 
 #Get all SSID and passwords
 
@@ -146,14 +149,18 @@ foreach ($SSID in $ListOfSSID){
     Write-Output "$SSID : $passphrase" | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 }
 
-
-Start-Sleep -Seconds 10
+ Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+  Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+   Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 
 # Get all installed apps.
 winget list | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 
 
-Start-Sleep -Seconds 20
+
+ Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+  Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+   Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 
 # Get all Windows Enabled Featured.
 "List of all Windows Enabled Featured" | out-file -filepath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
@@ -163,32 +170,32 @@ Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -App
 Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 
-Start-Sleep -Seconds 20
 # List of startup apps
 "Startup APPS" | out-file -filepath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 Get-CimInstance -ClassName Win32_StartupCommand | Select-Object -Property Description, User | out-file -filepath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 
-Start-Sleep -Seconds 20
 
 
 # Get all running Services 
 "List of running services" | out-file -filepath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 Get-Service | Where-Object {$_.Status -EQ "Running"} | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 
-Start-Sleep -Seconds 35
+
 
 # Show all applied GPO's
 "List of applied GPO's" | out-file -filepath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 gpresult /Scope User /v | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 
+ Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+  Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+   Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 
-Start-Sleep -Seconds 45
 
 # Show all scheduled tasks
 "List of Scheduled Tasks" | Out-File -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding utf8
 get-scheduledtask | where state -eq 'Ready' | Out-File -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding utf8
 
 write-host "Completed"
-Start-Sleep -Seconds 3
+Start-Sleep -Seconds 8
 
 clear
