@@ -19,11 +19,31 @@ Write-Host "
 Write-Host "Hello $WNZUserName, This script takes about 5 minutes to complete."
 
 # Get host name and last boot time 
+
+"Computer information" | out-file -filepath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 systeminfo | Select-String "Host Name","System Boot Time" | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 
+Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+systeminfo | find /i "logon server" | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+
+Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+systeminfo | findstr /i '"System Manufacturer"' | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+
+Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+systeminfo | findstr /i '"OS"' | find '"OS Version"' | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+
+Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+systeminfo | findstr /i '"OS"' | find '"OS Configuration"' | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 
 
- 
+ Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+  Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+   Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+
+
+# Get IP Stack info
+"IP Info" | out-file -filepath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 ipconfig /all | find /i '"IPv4 address"' | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 
@@ -41,50 +61,21 @@ ipconfig /all  | find /i '"DHCP Server"' | out-file -FilePath $folderPathReports
    Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
  
  
- 
-
-
-
-Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
-systeminfo | find /i "logon server" | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
-
-Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
-systeminfo | findstr /i '"System Manufacturer"' | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
-
-Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
-systeminfo | findstr /i '"OS"' | find '"OS Version"' | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
-
-Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
-systeminfo | findstr /i '"OS"' | find '"OS Configuration"' | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
-
-
+# Get Anti-Virus software
+"Installed Anti-Virus software" | out-file -filepath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+Get-CimInstance -Namespace root/SecurityCenter2 -ClassName AntivirusProduct | out-file -filepath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 
  Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
   Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
    Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 
-
-
-# Get Anti-Virus software
-"Installed Anti-Virus software" | out-file -filepath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
-Get-CimInstance -Namespace root/SecurityCenter2 -ClassName AntivirusProduct | out-file -filepath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
-
-
-
-
-
 # Get all local users
 "List of local users" | out-file -filepath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 Get-LocalGroupMember -name users | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 
-
-
-
 # Get members of administrator group
 "List of users in the Administrator Group" | out-file -filepath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 net localgroup administrators | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
-
-
 
 # List all drives
 "List of connected drives and mapped drives" | out-file -filepath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
@@ -110,8 +101,6 @@ Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -App
   Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 
 
-
-#
 #
 # Changed this to GetTCPConnections resolving domains.
 # Get list of all Open Ports
@@ -161,9 +150,9 @@ foreach ($SSID in $ListOfSSID){
    Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 
 # Get all installed apps.
+"Installed Programs" | out-file -filepath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 winget list | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
-
-
 
  Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
   Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
@@ -171,6 +160,7 @@ winget list | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -
 
 # Get all Windows Enabled Featured.
 "List of all Windows Enabled Featured" | out-file -filepath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 Get-WindowsOptionalFeature -Online | where {$_.State -eq "Enabled"} | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 
 Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
@@ -179,18 +169,17 @@ Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -App
 
 # List of startup apps
 "Startup APPS" | out-file -filepath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 Get-CimInstance -ClassName Win32_StartupCommand | Select-Object -Property Description, User | out-file -filepath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
-
-
 
 # Get all running Services 
 "List of running services" | out-file -filepath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 Get-Service | Where-Object {$_.Status -EQ "Running"} | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
-
-
 
 # Show all applied GPO's
 "List of applied GPO's" | out-file -filepath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
+Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 gpresult /Scope User /v | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 
  Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
@@ -200,6 +189,7 @@ gpresult /Scope User /v | out-file -FilePath $folderPathReports\$WNZClientInfo.t
 
 # Show all scheduled tasks
 "List of Scheduled Tasks" | Out-File -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding utf8
+Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 get-scheduledtask | where state -eq 'Ready' | Out-File -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding utf8
 
 write-host "Completed"
