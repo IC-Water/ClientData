@@ -37,7 +37,7 @@ Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -App
 systeminfo | findstr /i '"OS"' | find '"OS Configuration"' | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 
 Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
- Get-WmiObject -Class Win32_BIOS | Select-Object -Property SerialNumber  
+ Get-WmiObject -Class Win32_BIOS | Select-Object -Property SerialNumber  | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
 
  Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
   Write-Output " " | out-file -FilePath $folderPathReports\$WNZClientInfo.txt -Append -Encoding UTF8
