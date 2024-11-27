@@ -6,7 +6,6 @@ $WNZUserName = "${Env:Username}"
 
 
 Clear
-# Display Company Copyright
 
 Write-Host "
  +-+-+-+-+-+-+-+-+-+-+-+-+-+
