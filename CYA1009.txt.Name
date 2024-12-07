@@ -1,0 +1,764 @@
+﻿Computer information
+ 
+
+Host Name:                 CYA1009
+System Boot Time:          12/6/2024, 5:32:59 PM
+
+
+ 
+Logon Server:              \\CYA1009
+ 
+OS Manufacturer:           Microsoft Corporation
+System Boot Time:          12/6/2024, 5:32:59 PM
+System Manufacturer:       AZW
+System Model:              SEi
+System Type:               x64-based PC
+System Directory:          C:\WINDOWS\system32
+System Locale:             en-us;English (United States)
+ 
+OS Version:                10.0.22000 N/A Build 22000
+BIOS Version:              American Megatrends International, LLC. ALDER115, 4/25/2024
+ 
+OS Configuration:          Standalone Workstation
+ 
+
+SerialNumber 
+------------ 
+Y12454IG70213
+
+
+ 
+ 
+ 
+IP Info
+ 
+   IPv4 Address. . . . . . . . . . . : 192.168.0.250(Preferred) 
+ 
+   Default Gateway . . . . . . . . . : fe80::92ec:77ff:fe8e:fecf%24
+ 
+   Primary Dns Suffix  . . . . . . . : 
+   DNS Suffix Search List. . . . . . : wnzconsulting.localLan
+   Connection-specific DNS Suffix  . : 
+   Connection-specific DNS Suffix  . : 
+   Connection-specific DNS Suffix  . : 
+   Connection-specific DNS Suffix  . : 
+   Connection-specific DNS Suffix  . : 
+   Connection-specific DNS Suffix  . : 
+   Connection-specific DNS Suffix  . : wnzconsulting.localLan
+   DNS Servers . . . . . . . . . . . : 192.168.1.103
+   Connection-specific DNS Suffix Search List :
+   Connection-specific DNS Suffix  . : 
+ 
+   DHCP Server . . . . . . . . . . . : 192.168.1.1
+ 
+ 
+ 
+Installed Anti-Virus software
+
+
+displayName              : Webroot SecureAnywhere
+instanceGuid             : {2936F8B3-571B-7336-8577-2471F5CC8C22}
+pathToSignedProductExe   : C:\Program Files (x86)\Webroot\WRSA.exe
+pathToSignedReportingExe : C:\Program Files (x86)\Webroot\WRSA.exe
+productState             : 266240
+timestamp                : Sat, 07 Dec 2024 00:35:13 GMT
+PSComputerName           : 
+
+displayName              : Windows Defender
+instanceGuid             : {D68DDC3A-831F-4fae-9E44-DA132C1ACF46}
+pathToSignedProductExe   : windowsdefender://
+pathToSignedReportingExe : %ProgramFiles%\Windows Defender\MsMpeng.exe
+productState             : 393472
+timestamp                : Fri, 06 Dec 2024 14:55:36 GMT
+PSComputerName           : 
+
+
+
+ 
+ 
+ 
+List of local users
+
+ObjectClass Name                             PrincipalSource
+----------- ----                             ---------------
+Group       NT AUTHORITY\Authenticated Users Unknown        
+Group       NT AUTHORITY\INTERACTIVE         Unknown        
+
+
+List of users in the Administrator Group
+Alias name     administrators
+Comment        Administrators have complete and unrestricted access to the computer/domain
+
+Members
+
+-------------------------------------------------------------------------------
+Administrator
+AzureAD\CYA
+The command completed successfully.
+
+List of connected drives and mapped drives
+
+Name           Used (GB)     Free (GB) Provider      Root                                               CurrentLocation
+----           ---------     --------- --------      ----                                               ---------------
+C                  50.42        413.39 FileSystem    C:\                                 ...4-12-06\MicroPC Setup Files
+
+
+Shadow Copy Status
+vssadmin 1.1 - Volume Shadow Copy Service administrative command-line tool
+(C) Copyright 2001-2013 Microsoft Corp.
+
+Contents of shadow copy set ID: {c9b569b1-1d6d-4116-a476-40df019fcbeb}
+   Contained 1 shadow copies at creation time: 12/7/2024 2:50:28 PM
+      Shadow Copy ID: {8a3146b7-da07-4773-ae9b-9b396c21ef0d}
+         Original Volume: (C:)\\?\Volume{88700786-28eb-4b82-bd39-b8103095e16a}\
+         Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2
+         Originating Machine: CYA1009
+         Service Machine: CYA1009
+         Provider: 'Microsoft Software Shadow Copy provider 1.0'
+         Type: ClientAccessibleWriters
+         Attributes: Persistent, Client-accessible, No auto release, Differential, Auto recovered
+
+ 
+ 
+List of all shared folders
+
+Name   ScopeName Path       Description  
+----   --------- ----       -----------  
+ADMIN$ *         C:\WINDOWS Remote Admin 
+C$     *         C:\        Default share
+IPC$   *                    Remote IPC   
+
+
+ 
+ 
+ 
+List of all Open Ports
+
+LocalAddress  LocalPort RemoteHostName                                     RemoteAddress  RemotePort       State Proces
+                                                                                                                 sName 
+------------  --------- --------------                                     -------------  ----------       ----- ------
+192.168.0.250     64524 ec2-184-169-131-18.us-west-1.compute.amazonaws.com 184.169.131.18        443 Established       
+192.168.0.250     64514                                                    52.108.8.12           443 Established C:\...
+192.168.0.250     64513                                                    52.108.79.33          443 Established C:\...
+192.168.0.250     64509                                                    52.96.229.194         443 Established C:\...
+192.168.0.250     64508                                                    52.96.229.194         443 Established C:\...
+192.168.0.250     64507                                                    52.108.79.33          443 Established C:\...
+192.168.0.250     64482                                                    13.107.21.239         443 Established C:\...
+192.168.0.250     64481                                                    20.42.144.52          443 Established C:\...
+192.168.0.250     64398 bingforbusiness.com                                13.107.6.158          443 Established C:\...
+192.168.0.250     64391                                                    20.25.227.174         443 Established C:\...
+192.168.0.250     64383 bingforbusiness.com                                13.107.6.158          443 Established C:\...
+192.168.0.250     64382 bingforbusiness.com                                13.107.6.158          443 Established C:\...
+192.168.0.250     64375 a23-45-123-24.deploy.static.akamaitechnologies.com 23.45.123.24          443 Established C:\...
+192.168.0.250     64248                                                    192.168.0.95         8009 Established C:\...
+192.168.0.250     63566                                                    52.109.8.11           443 Established C:\...
+192.168.0.250     63347                                                    52.111.239.54         443 Established C:\...
+192.168.0.250     63341                                                    52.108.248.2          443 Established C:\...
+192.168.0.250     61396                                                    40.83.247.108         443 Established C:\...
+
+
+ 
+ 
+ 
+List of all Wi-Fi
+AtrocityExhibition :  ThisPlaceIsDeathWithWalls1982
+ 
+ 
+ 
+Installed Programs
+ 
+
+   - 
+   \ 
+                                                                                                                        
+
+   - 
+                                                                                                                        
+Name                                  Id                                     Version           Available        Source
+-----------------------------------------------------------------------------------------------------------------------
+Mozilla Firefox (x64 en-US)           Mozilla.Firefox                        133.0                              winget
+Mozilla Maintenance Service           ARP\Machine\X64\MozillaMaintenanceSerΓÇª 133.0                              
+Notepad++ (64-bit x64)                Notepad++.Notepad++                    8.7.4                              winget
+OpenVPN 2.6.7-I001 amd64              OpenVPNTechnologies.OpenVPN            2.6.701           2.6.1201         winget
+Zoom Workplace (64-bit)               Zoom.Zoom                              6.2.50939                          winget
+Microsoft Update Health Tools         ARP\Machine\X64\{ACF2602E-BD31-4BE5-AΓÇª 4.75.0.0                           
+Google Chrome                         Google.Chrome                          131.0.6778.109                     winget
+Update for x64-based Windows SystemsΓÇª ARP\Machine\X64\{DA80A019-4C3B-4DAA-AΓÇª 8.94.0.0                           
+Microsoft Edge                        Microsoft.Edge                         131.0.2903.86                      winget
+Webroot SecureAnywhere                Webroot.SecureAnywhere                 9.0.36.40         9.0.38.39        winget
+Microsoft Visual C++ 2015-2022 RedisΓÇª Microsoft.VCRedist.2015+.x64           14.42.34433.0                      winget
+UniGetUI                              XPFFTQ032PTPHF                         3.1.3                              msstore
+Microsoft OneDrive                    Microsoft.OneDrive                     21.050.0310.0001  24.221.1103.0003 winget
+PowerToys (Preview) x64               XP89DCGQ3K6VLD                         0.86.0                             msstore
+Intel┬« Graphics Command Center        MSIX\AppUp.IntelGraphicsExperience_1.ΓÇª 1.100.5688.0                       
+ThunderboltTM Control Center          MSIX\AppUp.ThunderboltControlCenter_1ΓÇª 1.0.37.0                           
+Cortana                               MSIX\Microsoft.549981C3F5F10_4.2308.1ΓÇª 4.2308.1005.0                      
+AV1 Video Extension                   MSIX\Microsoft.AV1VideoExtension_1.2.ΓÇª 1.2.2331.0                         
+Microsoft News                        MSIX\Microsoft.BingNews_1.3.1.0_x64__ΓÇª 1.3.1.0                            
+MSN Weather                           MSIX\Microsoft.BingWeather_3.2.3.0_x6ΓÇª 3.2.3.0                            
+OpenCLTM, OpenGL┬«, and Vulkan┬« CompaΓÇª MSIX\Microsoft.D3DMappingLayers_1.240ΓÇª 1.2409.2.0                         
+App Installer                         Microsoft.AppInstaller                 1.24.25200.0                       winget
+Get Help                              MSIX\Microsoft.GetHelp_10.2409.22951.ΓÇª 10.2409.22951.0                    
+Microsoft Tips                        MSIX\Microsoft.Getstarted_10.2312.1.0ΓÇª 10.2312.1.0                        
+HEIF Image Extensions                 MSIX\Microsoft.HEIFImageExtension_1.2ΓÇª 1.2.3.0                            
+HEVC Video Extensions from Device MaΓÇª MSIX\Microsoft.HEVCVideoExtension_2.2ΓÇª 2.2.9.0                            
+MPEG-2 Video Extension                MSIX\Microsoft.MPEG2VideoExtension_1.ΓÇª 1.0.61931.0                        
+Windows Operator messages             MSIX\Microsoft.Messaging_5.1901.60431ΓÇª 5.1901.60431.0                     
+Microsoft Edge                        MSIX\Microsoft.MicrosoftEdge.Stable_1ΓÇª 131.0.2903.86                      
+Power BI                              MSIX\Microsoft.MicrosoftPowerBIForWinΓÇª 3219.31113.2239.0                  
+Microsoft Sticky Notes                MSIX\Microsoft.MicrosoftStickyNotes_4ΓÇª 4.0.6104.0                         
+Microsoft .Net Native Framework PackΓÇª MSIX\Microsoft.NET.Native.Framework.2ΓÇª 2.1.27427.0                        
+Microsoft .Net Native Framework PackΓÇª MSIX\Microsoft.NET.Native.Framework.2ΓÇª 2.1.27427.0                        
+Microsoft .Net Native Framework PackΓÇª MSIX\Microsoft.NET.Native.Framework.2ΓÇª 2.2.29512.0                        
+Microsoft .Net Native Framework PackΓÇª MSIX\Microsoft.NET.Native.Framework.2ΓÇª 2.2.29512.0                        
+Microsoft .Net Native Runtime PackagΓÇª MSIX\Microsoft.NET.Native.Runtime.2.1ΓÇª 2.1.26424.0                        
+Microsoft .Net Native Runtime PackagΓÇª MSIX\Microsoft.NET.Native.Runtime.2.1ΓÇª 2.1.26424.0                        
+Microsoft .Net Native Runtime PackagΓÇª MSIX\Microsoft.NET.Native.Runtime.2.2ΓÇª 2.2.28604.0                        
+Microsoft .Net Native Runtime PackagΓÇª MSIX\Microsoft.NET.Native.Runtime.2.2ΓÇª 2.2.28604.0                        
+Paint                                 MSIX\Microsoft.Paint_11.2410.38.0_x64ΓÇª 11.2410.38.0                       
+Microsoft People                      MSIX\Microsoft.People_10.2202.100.0_xΓÇª 10.2202.100.0                      
+Power Automate                        MSIX\Microsoft.PowerAutomateDesktop_1ΓÇª 1.0.1307.0                         
+PowerToys FileLocksmith Context Menu  MSIX\Microsoft.PowerToys.FileLocksmitΓÇª 0.86.0.0                           
+PowerToys ImageResizer Context Menu   MSIX\Microsoft.PowerToys.ImageResizerΓÇª 0.86.0.0                           
+PowerToys PowerRename Context Menu    MSIX\Microsoft.PowerToys.PowerRenameCΓÇª 0.86.0.0                           
+Snipping Tool                         MSIX\Microsoft.ScreenSketch_11.2409.2ΓÇª 11.2409.25.0                       
+Windows Security                      MSIX\Microsoft.SecHealthUI_1000.22000ΓÇª 1000.22000.194.0                   
+Microsoft Engagement Framework        MSIX\Microsoft.Services.Store.EngagemΓÇª 10.0.23012.0                       
+Microsoft Engagement Framework        MSIX\Microsoft.Services.Store.EngagemΓÇª 10.0.23012.0                       
+Store Experience Host                 MSIX\Microsoft.StorePurchaseApp_22410ΓÇª 22410.1401.0.0                     
+Microsoft To Do                       MSIX\Microsoft.Todos_0.114.7122.0_x64ΓÇª 0.114.7122.0                       
+Microsoft.UI.Xaml.2.4                 MSIX\Microsoft.UI.Xaml.2.4_2.42007.90ΓÇª 2.42007.9001.0                     
+Microsoft.UI.Xaml.2.7                 Microsoft.UI.Xaml.2.7                  7.2409.9001.0                      winget
+Microsoft.UI.Xaml.2.7                 Microsoft.UI.Xaml.2.7                  7.2409.9001.0                      winget
+Microsoft.UI.Xaml.2.8                 Microsoft.UI.Xaml.2.8                  8.2310.30001.0                     winget
+Microsoft.UI.Xaml.2.8                 Microsoft.UI.Xaml.2.8                  8.2310.30001.0                     winget
+Microsoft Visual C++ 2015 UWP DesktoΓÇª Microsoft.VCLibs.Desktop.14            14.0.33728.0                       winget
+Microsoft Visual C++ 2015 UWP DesktoΓÇª Microsoft.VCLibs.Desktop.14            14.0.33728.0                       winget
+Microsoft Visual C++ 2015 UWP RuntimΓÇª MSIX\Microsoft.VCLibs.140.00_14.0.307ΓÇª 14.0.30704.0                       
+Microsoft Visual C++ 2015 UWP RuntimΓÇª MSIX\Microsoft.VCLibs.140.00_14.0.335ΓÇª 14.0.33519.0                       
+Microsoft Visual C++ 2015 UWP RuntimΓÇª MSIX\Microsoft.VCLibs.140.00_14.0.335ΓÇª 14.0.33519.0                       
+VP9 Video Extensions                  MSIX\Microsoft.VP9VideoExtensions_1.2ΓÇª 1.2.2.0                            
+Web Media Extensions                  MSIX\Microsoft.WebMediaExtensions_1.1ΓÇª 1.1.1295.0                         
+Webp Image Extensions                 MSIX\Microsoft.WebpImageExtension_1.1ΓÇª 1.1.1711.0                         
+Microsoft Whiteboard                  MSIX\Microsoft.Whiteboard_54.20907.56ΓÇª 54.20907.567.0                     
+Widgets Platform Runtime              MSIX\Microsoft.WidgetsPlatformRuntimeΓÇª 1.6.1.0                            
+Microsoft Photos                      MSIX\Microsoft.Windows.Photos_2024.11ΓÇª 2024.11100.16009ΓÇª                  
+Windows Clock                         MSIX\Microsoft.WindowsAlarms_1.0.197.ΓÇª 1.0.197.0                          
+WindowsAppRuntime.1.4                 MSIX\Microsoft.WindowsAppRuntime.1.4_ΓÇª 4000.1309.2056.0                   
+WindowsAppRuntime.1.4                 MSIX\Microsoft.WindowsAppRuntime.1.4_ΓÇª 4000.1309.2056.0                   
+WindowsAppRuntime.1.5                 MSIX\Microsoft.WindowsAppRuntime.1.5_ΓÇª 5001.311.2039.0                    
+WindowsAppRuntime.1.5                 MSIX\Microsoft.WindowsAppRuntime.1.5_ΓÇª 5001.311.2039.0                    
+Windows Calculator                    MSIX\Microsoft.WindowsCalculator_11.2ΓÇª 11.2409.0.0                        
+Windows Camera                        MSIX\Microsoft.WindowsCamera_2024.240ΓÇª 2024.2408.1.0                      
+Feedback Hub                          MSIX\Microsoft.WindowsFeedbackHub_1.2ΓÇª 1.2410.25104.0                     
+Windows Maps                          MSIX\Microsoft.WindowsMaps_1.0.62.0_xΓÇª 1.0.62.0                           
+Windows Notepad                       MSIX\Microsoft.WindowsNotepad_11.2410ΓÇª 11.2410.20.0                       
+Windows Sound Recorder                MSIX\Microsoft.WindowsSoundRecorder_1ΓÇª 11.2408.6.0                        
+Microsoft Store                       MSIX\Microsoft.WindowsStore_22410.140ΓÇª 22410.1401.4.0                     
+Windows Terminal                      Microsoft.WindowsTerminal              1.21.3231.0                        winget
+Windows Package Manager Source (wingΓÇª MSIX\Microsoft.Winget.Source_2024.120ΓÇª 2024.1207.1750.48                  
+Phone Link                            MSIX\Microsoft.YourPhone_1.24111.82.0ΓÇª 1.24111.82.0                       
+Windows Media Player                  MSIX\Microsoft.ZuneMusic_11.2410.8.0_ΓÇª 11.2410.8.0                        
+Movies & TV                           MSIX\Microsoft.ZuneVideo_10.24101.100ΓÇª 10.24101.10041.0                   
+Quick Assist                          9P7BP5VNWKX5                           2.0.32.0                           msstore
+Microsoft Teams (personal)            Microsoft.Teams.Free                   24295.401.3195.9ΓÇª                  winget
+Windows Web Experience Pack           MSIX\MicrosoftWindows.Client.WebExperΓÇª 524.30502.30.0                     
+Cross Device Experience Host          MSIX\MicrosoftWindows.CrossDevice_0.2ΓÇª 0.24111.37.0                       
+Notepad++                             MSIX\NotepadPlusPlus_1.0.0.0_neutral_ΓÇª 1.0.0.0                            
+Mail and Calendar                     MSIX\microsoft.windowscommunicationsaΓÇª 16005.14326.2209ΓÇª                  
+ 
+ 
+ 
+List of all Windows Enabled Featured
+ 
+
+
+FeatureName : Windows-Defender-Default-Definitions
+State       : Enabled
+
+FeatureName : Printing-PrintToPDFServices-Features
+State       : Enabled
+
+FeatureName : Printing-XPSServices-Features
+State       : Enabled
+
+FeatureName : NetFx3
+State       : Enabled
+
+FeatureName : WCF-Services45
+State       : Enabled
+
+FeatureName : WCF-TCP-PortSharing45
+State       : Enabled
+
+FeatureName : MediaPlayback
+State       : Enabled
+
+FeatureName : WindowsMediaPlayer
+State       : Enabled
+
+FeatureName : SmbDirect
+State       : Enabled
+
+FeatureName : MicrosoftWindowsPowerShellV2Root
+State       : Enabled
+
+FeatureName : MicrosoftWindowsPowerShellV2
+State       : Enabled
+
+FeatureName : WorkFolders-Client
+State       : Enabled
+
+FeatureName : MSRDC-Infrastructure
+State       : Enabled
+
+FeatureName : NetFx4-AdvSrvs
+State       : Enabled
+
+FeatureName : SearchEngine-Client-Package
+State       : Enabled
+
+FeatureName : Printing-Foundation-Features
+State       : Enabled
+
+FeatureName : Printing-Foundation-InternetPrinting-Client
+State       : Enabled
+
+
+
+ 
+ 
+ 
+Startup APPS
+ 
+
+Description                                              User                        
+-----------                                              ----                        
+MicrosoftEdgeAutoLaunch_B653A767BD5EECCACD5BA85572CA3A51 AzureAD\CYA                 
+OneDrive                                                 AzureAD\CYA                 
+WingetUI                                                 AzureAD\CYA                 
+OpenVPN-GUI                                              AzureAD\CYA                 
+OneDriveSetup                                            NT AUTHORITY\LOCAL SERVICE  
+OneDriveSetup                                            NT AUTHORITY\NETWORK SERVICE
+SecurityHealth                                           Public                      
+
+
+List of running services
+ 
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  Appinfo            Application Information               
+Running  AppXSvc            AppX Deployment Service (AppXSVC)     
+Running  AudioEndpointBu... Windows Audio Endpoint Builder        
+Running  Audiosrv           Windows Audio                         
+Running  BFE                Base Filtering Engine                 
+Running  BluetoothUserSe... Bluetooth User Support Service_cd9c10 
+Running  BrokerInfrastru... Background Tasks Infrastructure Ser...
+Running  BTAGService        Bluetooth Audio Gateway Service       
+Running  BthAvctpSvc        AVCTP service                         
+Running  bthserv            Bluetooth Support Service             
+Running  camsvc             Capability Access Manager Service     
+Running  cbdhsvc_cd9c10     Clipboard User Service_cd9c10         
+Running  CDPSvc             Connected Devices Platform Service    
+Running  CDPUserSvc_cd9c10  Connected Devices Platform User Ser...
+Running  CertPropSvc        Certificate Propagation               
+Running  ClipSVC            Client License Service (ClipSVC)      
+Running  CoreMessagingRe... CoreMessaging                         
+Running  cplspcon           Intel(R) Content Protection HDCP Se...
+Running  CryptSvc           Cryptographic Services                
+Running  DcomLaunch         DCOM Server Process Launcher          
+Running  DeviceAssociati... Device Association Service            
+Running  Dhcp               DHCP Client                           
+Running  DiagTrack          Connected User Experiences and Tele...
+Running  DispBrokerDeskt... Display Policy Service                
+Running  Dnscache           DNS Client                            
+Running  DoSvc              Delivery Optimization                 
+Running  DPS                Diagnostic Policy Service             
+Running  DsSvc              Data Sharing Service                  
+Running  DusmSvc            Data Usage                            
+Running  EventLog           Windows Event Log                     
+Running  EventSystem        COM+ Event System                     
+Running  FontCache          Windows Font Cache Service            
+Running  gpsvc              Group Policy Client                   
+Running  hidserv            Human Interface Device Service        
+Running  igccservice        Intel(R) Graphics Command Center Se...
+Running  InstallService     Microsoft Store Install Service       
+Running  ipfsvc             Intel(R) Innovation Platform Framew...
+Running  iphlpsvc           IP Helper                             
+Running  jhi_service        Intel(R) Dynamic Application Loader...
+Running  KeyIso             CNG Key Isolation                     
+Running  LanmanServer       Server                                
+Running  LanmanWorkstation  Workstation                           
+Running  lfsvc              Geolocation Service                   
+Running  LicenseManager     Windows License Manager Service       
+Running  lmhosts            TCP/IP NetBIOS Helper                 
+Running  LSM                Local Session Manager                 
+Running  mpssvc             Windows Defender Firewall             
+Running  msiserver          Windows Installer                     
+Running  NcbService         Network Connection Broker             
+Running  Netman             Network Connections                   
+Running  netprofm           Network List Service                  
+Running  NgcCtnrSvc         Microsoft Passport Container          
+Running  NgcSvc             Microsoft Passport                    
+Running  nsi                Network Store Interface Service       
+Running  OneSyncSvc_cd9c10  Sync Host_cd9c10                      
+Running  OpenVPNService     OpenVPNService                        
+Running  OpenVPNServiceI... OpenVPN Interactive Service           
+Running  PcaSvc             Program Compatibility Assistant Ser...
+Running  PimIndexMainten... Contact Data_cd9c10                   
+Running  PlugPlay           Plug and Play                         
+Running  Power              Power                                 
+Running  ProfSvc            User Profile Service                  
+Running  RmSvc              Radio Management Service              
+Running  RpcEptMapper       RPC Endpoint Mapper                   
+Running  RpcSs              Remote Procedure Call (RPC)           
+Running  SamSs              Security Accounts Manager             
+Running  SCardSvr           Smart Card                            
+Running  Schedule           Task Scheduler                        
+Running  SecurityHealthS... Windows Security Service              
+Running  SENS               System Event Notification Service     
+Running  SgrmBroker         System Guard Runtime Monitor Broker   
+Running  ShellHWDetection   Shell Hardware Detection              
+Running  Spooler            Print Spooler                         
+Running  SSDPSRV            SSDP Discovery                        
+Running  StateRepository    State Repository Service              
+Running  StorSvc            Storage Service                       
+Running  swprv              Microsoft Software Shadow Copy Prov...
+Running  SysMain            SysMain                               
+Running  SystemEventsBroker System Events Broker                  
+Running  TabletInputService Touch Keyboard and Handwriting Pane...
+Running  TbtP2pShortcutS... Thunderbolt(TM) Peer to Peer Shortcut 
+Running  Themes             Themes                                
+Running  TimeBrokerSvc      Time Broker                           
+Running  TokenBroker        Web Account Manager                   
+Running  TrkWks             Distributed Link Tracking Client      
+Running  TrustedInstaller   Windows Modules Installer             
+Running  UdkUserSvc_cd9c10  Udk User Service_cd9c10               
+Running  uhssvc             Microsoft Update Health Service       
+Running  UnistoreSvc_cd9c10 User Data Storage_cd9c10              
+Running  UserDataSvc_cd9c10 User Data Access_cd9c10               
+Running  UserManager        User Manager                          
+Running  UsoSvc             Update Orchestrator Service           
+Running  VaultSvc           Credential Manager                    
+Running  VSS                Volume Shadow Copy                    
+Running  Wcmsvc             Windows Connection Manager            
+Running  WdiSystemHost      Diagnostic System Host                
+Running  WinHttpAutoProx... WinHTTP Web Proxy Auto-Discovery Se...
+Running  Winmgmt            Windows Management Instrumentation    
+Running  WlanSvc            WLAN AutoConfig                       
+Running  wlidsvc            Microsoft Account Sign-in Assistant   
+Running  WMIRegistration... Intel(R) Management Engine WMI Prov...
+Running  WpnService         Windows Push Notifications System S...
+Running  WpnUserService_... Windows Push Notifications User Ser...
+Running  WRCoreService      WRCoreService                         
+Running  WRSkyClient        WRSkyClient                           
+Running  WRSVC              WRSVC                                 
+Running  wscsvc             Security Center                       
+Running  WSearch            Windows Search                        
+Running  wuauserv           Windows Update                        
+
+
+List of applied GPO's
+ 
+
+Microsoft (R) Windows (R) Operating System Group Policy Result tool v2.0
+c Microsoft Corporation. All rights reserved.
+
+Created on ?12/?7/?2024 at 2:59:43 PM
+
+
+
+RSOP data for AzureAD\CYA on CYA1009 : Logging Mode
+----------------------------------------------------
+
+OS Configuration:            Standalone Workstation
+OS Version:                  10.0.22000
+Site Name:                   N/A
+Roaming Profile:             N/A
+Local Profile:               C:\Users\CYA
+Connected over a slow link?: No
+
+
+USER SETTINGS
+--------------
+    
+    Last time Group Policy was applied: 12/7/2024 at 2:48:59 PM
+    Group Policy was applied from:      N/A
+    Group Policy slow link threshold:   500 kbps
+    Domain Name:                        AzureAD
+    Domain Type:                        WindowsNT 4
+    
+    Applied Group Policy Objects
+    -----------------------------
+        N/A
+
+    The following GPOs were not applied because they were filtered out
+    -------------------------------------------------------------------
+        Local Group Policy
+            Filtering:  Not Applied (Empty)
+
+    The user is a part of the following security groups
+    ---------------------------------------------------
+        High Mandatory Level
+        Everyone
+        BUILTIN\Administrators
+        BUILTIN\Users
+        NT AUTHORITY\INTERACTIVE
+        CONSOLE LOGON
+        NT AUTHORITY\Authenticated Users
+        This Organization
+        LOCAL
+        Cloud Account Authentication
+        
+    The user has the following security privileges
+    ----------------------------------------------
+
+        Bypass traverse checking
+        Manage auditing and security log
+        Back up files and directories
+        Restore files and directories
+        Change the system time
+        Shut down the system
+        Force shutdown from a remote system
+        Take ownership of files or other objects
+        Debug programs
+        Modify firmware environment values
+        Profile system performance
+        Profile single process
+        Increase scheduling priority
+        Load and unload device drivers
+        Create a pagefile
+        Adjust memory quotas for a process
+        Remove computer from docking station
+        Perform volume maintenance tasks
+        Impersonate a client after authentication
+        Create global objects
+        Change the time zone
+        Create symbolic links
+        Obtain an impersonation token for another user in the same session
+        Increase a process working set
+
+    Resultant Set Of Policies for User
+    -----------------------------------
+
+        Software Installations
+        ----------------------
+            N/A
+
+        Logon Scripts
+        -------------
+            N/A
+
+        Logoff Scripts
+        --------------
+            N/A
+
+        Public Key Policies
+        -------------------
+            N/A
+
+        Administrative Templates
+        ------------------------
+            N/A
+
+        Folder Redirection
+        ------------------
+            N/A
+
+        Internet Explorer Browser User Interface
+        ----------------------------------------
+            N/A
+
+        Internet Explorer Connection
+        ----------------------------
+            N/A
+
+        Internet Explorer URLs
+        ----------------------
+            N/A
+
+        Internet Explorer Security
+        --------------------------
+            N/A
+
+        Internet Explorer Programs
+        --------------------------
+            N/A
+ 
+ 
+ 
+List of Scheduled Tasks
+ 
+
+TaskPath                                       TaskName                          State     
+--------                                       --------                          -----     
+\                                              MicrosoftEdgeUpdateTaskMachine... Ready     
+\                                              MicrosoftEdgeUpdateTaskMachineUA  Ready     
+\                                              OneDrive Reporting Task-S-1-5-... Ready     
+\                                              OneDrive Standalone Update Tas... Ready     
+\                                              OneDrive Standalone Update Tas... Ready     
+\GoogleSystem\GoogleUpdater\                   GoogleUpdaterTaskSystem132.0.6... Ready     
+\Microsoft\Windows\.NET Framework\             .NET Framework NGEN v4.0.30319    Ready     
+\Microsoft\Windows\.NET Framework\             .NET Framework NGEN v4.0.30319 64 Ready     
+\Microsoft\Windows\Active Directory Rights ... AD RMS Rights Policy Template ... Ready     
+\Microsoft\Windows\AppID\                      EDP Policy Manager                Ready     
+\Microsoft\Windows\Application Experience\     Microsoft Compatibility Appraiser Ready     
+\Microsoft\Windows\Application Experience\     PcaPatchDbTask                    Ready     
+\Microsoft\Windows\Application Experience\     ProgramDataUpdater                Ready     
+\Microsoft\Windows\Application Experience\     StartupAppTask                    Ready     
+\Microsoft\Windows\ApplicationData\            appuriverifierdaily               Ready     
+\Microsoft\Windows\ApplicationData\            appuriverifierinstall             Ready     
+\Microsoft\Windows\ApplicationData\            CleanupTemporaryState             Ready     
+\Microsoft\Windows\ApplicationData\            DsSvcCleanup                      Ready     
+\Microsoft\Windows\AppListBackup\              Backup                            Ready     
+\Microsoft\Windows\Autochk\                    Proxy                             Ready     
+\Microsoft\Windows\BitLocker\                  BitLocker Encrypt All Drives      Ready     
+\Microsoft\Windows\BitLocker\                  BitLocker MDM policy Refresh      Ready     
+\Microsoft\Windows\Bluetooth\                  UninstallDeviceTask               Ready     
+\Microsoft\Windows\BrokerInfrastructure\       BgTaskRegistrationMaintenanceTask Ready     
+\Microsoft\Windows\capabilityaccessmanager\    maintenancetasks                  Ready     
+\Microsoft\Windows\CertificateServicesClient\  AikCertEnrollTask                 Ready     
+\Microsoft\Windows\CertificateServicesClient\  CryptoPolicyTask                  Ready     
+\Microsoft\Windows\CertificateServicesClient\  KeyPreGenTask                     Ready     
+\Microsoft\Windows\CertificateServicesClient\  SystemTask                        Ready     
+\Microsoft\Windows\CertificateServicesClient\  UserTask                          Ready     
+\Microsoft\Windows\CertificateServicesClient\  UserTask-Roam                     Ready     
+\Microsoft\Windows\Chkdsk\                     ProactiveScan                     Ready     
+\Microsoft\Windows\Chkdsk\                     SyspartRepair                     Ready     
+\Microsoft\Windows\CloudExperienceHost\        CreateObjectTask                  Ready     
+\Microsoft\Windows\Customer Experience Impr... Consolidator                      Ready     
+\Microsoft\Windows\Customer Experience Impr... UsbCeip                           Ready     
+\Microsoft\Windows\Data Integrity Scan\        Data Integrity Check And Scan     Ready     
+\Microsoft\Windows\Data Integrity Scan\        Data Integrity Scan               Ready     
+\Microsoft\Windows\Data Integrity Scan\        Data Integrity Scan for Crash ... Ready     
+\Microsoft\Windows\Defrag\                     ScheduledDefrag                   Ready     
+\Microsoft\Windows\Device Information\         Device                            Ready     
+\Microsoft\Windows\Device Information\         Device User                       Ready     
+\Microsoft\Windows\Device Setup\               Metadata Refresh                  Ready     
+\Microsoft\Windows\DeviceDirectoryClient\      HandleCommand                     Ready     
+\Microsoft\Windows\DeviceDirectoryClient\      HandleWnsCommand                  Ready     
+\Microsoft\Windows\DeviceDirectoryClient\      IntegrityCheck                    Ready     
+\Microsoft\Windows\DeviceDirectoryClient\      LocateCommandUserSession          Ready     
+\Microsoft\Windows\DeviceDirectoryClient\      RegisterDeviceAccountChange       Ready     
+\Microsoft\Windows\DeviceDirectoryClient\      RegisterDevicePolicyChange        Ready     
+\Microsoft\Windows\DeviceDirectoryClient\      RegisterDeviceProtectionStateC... Ready     
+\Microsoft\Windows\DeviceDirectoryClient\      RegisterDeviceSettingChange       Ready     
+\Microsoft\Windows\DeviceDirectoryClient\      RegisterUserDevice                Ready     
+\Microsoft\Windows\Diagnosis\                  RecommendedTroubleshootingScanner Ready     
+\Microsoft\Windows\Diagnosis\                  Scheduled                         Ready     
+\Microsoft\Windows\DirectX\                    DirectXDatabaseUpdater            Ready     
+\Microsoft\Windows\DirectX\                    DXGIAdapterCache                  Ready     
+\Microsoft\Windows\DiskCleanup\                SilentCleanup                     Ready     
+\Microsoft\Windows\DiskDiagnostic\             Microsoft-Windows-DiskDiagnost... Ready     
+\Microsoft\Windows\DiskFootprint\              Diagnostics                       Ready     
+\Microsoft\Windows\DiskFootprint\              StorageSense                      Ready     
+\Microsoft\Windows\DUSM\                       dusmtask                          Ready     
+\Microsoft\Windows\EDP\                        EDP App Launch Task               Ready     
+\Microsoft\Windows\EDP\                        EDP Auth Task                     Ready     
+\Microsoft\Windows\EDP\                        EDP Inaccessible Credentials Task Ready     
+\Microsoft\Windows\EDP\                        StorageCardEncryption Task        Ready     
+\Microsoft\Windows\ExploitGuard\               ExploitGuard MDM policy Refresh   Ready     
+\Microsoft\Windows\Feedback\Siuf\              DmClient                          Ready     
+\Microsoft\Windows\Feedback\Siuf\              DmClientOnScenarioDownload        Ready     
+\Microsoft\Windows\FileHistory\                File History (maintenance mode)   Ready     
+\Microsoft\Windows\Flighting\FeatureConfig\    ReconcileFeatures                 Ready     
+\Microsoft\Windows\Flighting\FeatureConfig\    UsageDataFlushing                 Ready     
+\Microsoft\Windows\Flighting\FeatureConfig\    UsageDataReporting                Ready     
+\Microsoft\Windows\Flighting\OneSettings\      RefreshCache                      Ready     
+\Microsoft\Windows\Input\                      LocalUserSyncDataAvailable        Ready     
+\Microsoft\Windows\Input\                      MouseSyncDataAvailable            Ready     
+\Microsoft\Windows\Input\                      PenSyncDataAvailable              Ready     
+\Microsoft\Windows\Input\                      TouchpadSyncDataAvailable         Ready     
+\Microsoft\Windows\InstallService\             ScanForUpdates                    Ready     
+\Microsoft\Windows\InstallService\             ScanForUpdatesAsUser              Ready     
+\Microsoft\Windows\InstallService\             SmartRetry                        Ready     
+\Microsoft\Windows\International\              Synchronize Language Settings     Ready     
+\Microsoft\Windows\Kernel\                     La57Cleanup                       Ready     
+\Microsoft\Windows\LanguageComponentsInstal... Installation                      Ready     
+\Microsoft\Windows\LanguageComponentsInstal... ReconcileLanguageResources        Ready     
+\Microsoft\Windows\LanguageComponentsInstal... Uninstallation                    Ready     
+\Microsoft\Windows\License Manager\            TempSignedLicenseExchange         Ready     
+\Microsoft\Windows\Location\                   Notifications                     Ready     
+\Microsoft\Windows\Location\                   WindowsActionDialog               Ready     
+\Microsoft\Windows\Maintenance\                WinSAT                            Ready     
+\Microsoft\Windows\Management\Provisioning\    Cellular                          Ready     
+\Microsoft\Windows\Management\Provisioning\    Logon                             Ready     
+\Microsoft\Windows\Maps\                       MapsToastTask                     Ready     
+\Microsoft\Windows\MemoryDiagnostic\           ProcessMemoryDiagnosticEvents     Ready     
+\Microsoft\Windows\MemoryDiagnostic\           RunFullMemoryDiagnostic           Ready     
+\Microsoft\Windows\MUI\                        LPRemove                          Ready     
+\Microsoft\Windows\NetTrace\                   GatherNetworkInfo                 Ready     
+\Microsoft\Windows\NlaSvc\                     WiFiTask                          Ready     
+\Microsoft\Windows\PI\                         Secure-Boot-Update                Ready     
+\Microsoft\Windows\PI\                         SecureBootEncodeUEFI              Ready     
+\Microsoft\Windows\PI\                         Sqm-Tasks                         Ready     
+\Microsoft\Windows\Plug and Play\              Device Install Group Policy       Ready     
+\Microsoft\Windows\Plug and Play\              Device Install Reboot Required    Ready     
+\Microsoft\Windows\Plug and Play\              Sysprep Generalize Drivers        Ready     
+\Microsoft\Windows\Power Efficiency Diagnos... AnalyzeSystem                     Ready     
+\Microsoft\Windows\Printing\                   EduPrintProv                      Ready     
+\Microsoft\Windows\Printing\                   PrinterCleanupTask                Ready     
+\Microsoft\Windows\PushToInstall\              Registration                      Ready     
+\Microsoft\Windows\Ras\                        MobilityManager                   Ready     
+\Microsoft\Windows\RecoveryEnvironment\        VerifyWinRE                       Ready     
+\Microsoft\Windows\Registry\                   RegIdleBackup                     Ready     
+\Microsoft\Windows\RemoteAssistance\           RemoteAssistanceTask              Ready     
+\Microsoft\Windows\RetailDemo\                 CleanupOfflineContent             Ready     
+\Microsoft\Windows\Servicing\                  StartComponentCleanup             Ready     
+\Microsoft\Windows\Shell\                      CreateObjectTask                  Ready     
+\Microsoft\Windows\Shell\                      FamilySafetyMonitor               Ready     
+\Microsoft\Windows\Shell\                      FamilySafetyRefreshTask           Ready     
+\Microsoft\Windows\Shell\                      IndexerAutomaticMaintenance       Ready     
+\Microsoft\Windows\Shell\                      ThemesSyncedImageDownload         Ready     
+\Microsoft\Windows\Shell\                      UpdateUserPictureTask             Ready     
+\Microsoft\Windows\SoftwareProtectionPlatform\ SvcRestartTask                    Ready     
+\Microsoft\Windows\SpacePort\                  SpaceAgentTask                    Ready     
+\Microsoft\Windows\SpacePort\                  SpaceManagerTask                  Ready     
+\Microsoft\Windows\Speech\                     SpeechModelDownloadTask           Ready     
+\Microsoft\Windows\StateRepository\            MaintenanceTasks                  Ready     
+\Microsoft\Windows\Storage Tiers Management\   Storage Tiers Management Initi... Ready     
+\Microsoft\Windows\Subscription\               EnableLicenseAcquisition          Ready     
+\Microsoft\Windows\Subscription\               LicenseAcquisition                Ready     
+\Microsoft\Windows\Sysmain\                    ResPriStaticDbSync                Ready     
+\Microsoft\Windows\Sysmain\                    WsSwapAssessmentTask              Ready     
+\Microsoft\Windows\SystemRestore\              SR                                Ready     
+\Microsoft\Windows\Task Manager\               Interactive                       Ready     
+\Microsoft\Windows\TextServicesFramework\      MsCtfMonitor                      Ready     
+\Microsoft\Windows\Time Synchronization\       ForceSynchronizeTime              Ready     
+\Microsoft\Windows\Time Synchronization\       SynchronizeTime                   Ready     
+\Microsoft\Windows\Time Zone\                  SynchronizeTimeZone               Ready     
+\Microsoft\Windows\TPM\                        Tpm-HASCertRetr                   Ready     
+\Microsoft\Windows\TPM\                        Tpm-Maintenance                   Ready     
+\Microsoft\Windows\UpdateOrchestrator\         Report policies                   Ready     
+\Microsoft\Windows\UpdateOrchestrator\         Schedule Scan                     Ready     
+\Microsoft\Windows\UpdateOrchestrator\         Schedule Scan Static Task         Ready     
+\Microsoft\Windows\UpdateOrchestrator\         Schedule Work                     Ready     
+\Microsoft\Windows\UpdateOrchestrator\         Start Oobe Expedite Work          Ready     
+\Microsoft\Windows\UpdateOrchestrator\         StartOobeAppsScan                 Ready     
+\Microsoft\Windows\UpdateOrchestrator\         UpdateModelTask                   Ready     
+\Microsoft\Windows\UpdateOrchestrator\         USO_UxBroker                      Ready     
+\Microsoft\Windows\UpdateOrchestrator\         UUS Failover Task                 Ready     
+\Microsoft\Windows\UPnP\                       UPnPHostConfig                    Ready     
+\Microsoft\Windows\USB\                        Usb-Notifications                 Ready     
+\Microsoft\Windows\WCM\                        WiFiTask                          Ready     
+\Microsoft\Windows\WDI\                        ResolutionHost                    Ready     
+\Microsoft\Windows\Windows Error Reporting\    QueueReporting                    Ready     
+\Microsoft\Windows\Windows Filtering Platform\ BfeOnServiceStartTypeChange       Ready     
+\Microsoft\Windows\Windows Media Sharing\      UpdateLibrary                     Ready     
+\Microsoft\Windows\WindowsColorSystem\         Calibration Loader                Ready     
+\Microsoft\Windows\WindowsUpdate\              Scheduled Start                   Ready     
+\Microsoft\Windows\WindowsUpdate\RUXIM\        PLUGScheduler                     Ready     
+\Microsoft\Windows\WlanSvc\                    CDSSync                           Ready     
+\Microsoft\Windows\WOF\                        WIM-Hash-Management               Ready     
+\Microsoft\Windows\WOF\                        WIM-Hash-Validation               Ready     
+\Microsoft\Windows\Work Folders\               Work Folders Logon Synchroniza... Ready     
+\Microsoft\Windows\Work Folders\               Work Folders Maintenance Work     Ready     
+\Microsoft\Windows\Workplace Join\             Device-Sync                       Ready     
+\Microsoft\Windows\WwanSvc\                    NotificationTask                  Ready     
+\Microsoft\Windows\WwanSvc\                    OobeDiscovery                     Ready     
+\Microsoft\XblGameSave\                        XblGameSaveTask                   Ready     
+\Mozilla\                                      Firefox Default Browser Agent ... Ready     
+\PowerToys\                                    Autorun for CYA                   Ready     
+
+
